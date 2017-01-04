@@ -1,0 +1,1 @@
+json.array! @puchases, partial: 'puchases/puchase', as: :puchase

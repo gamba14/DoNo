@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @puchase.name %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @puchase.cost %>
+</p>
+
+<%= link_to 'Edit', edit_puchase_path(@puchase) %> |
+<%= link_to 'Back', puchases_path %>

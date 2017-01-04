@@ -1,0 +1,1 @@
+json.partial! "puchases/puchase", puchase: @puchase

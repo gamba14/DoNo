@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Puchases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Cost</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @puchases.each do |puchase| %>
+      <tr>
+        <td><%= puchase.name %></td>
+        <td><%= puchase.cost %></td>
+        <td><%= link_to 'Show', puchase %></td>
+        <td><%= link_to 'Edit', edit_puchase_path(puchase) %></td>
+        <td><%= link_to 'Destroy', puchase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Puchase', new_puchase_path %>
